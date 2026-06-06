@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wollven Finance — Diagnóstico Financiero Estratégico para PyMEs en México</title>
-<meta name="description" content="En 72 horas sabes exactamente dónde pierde dinero tu negocio. Diagnóstico financiero estratégico con IA + criterio humano para PyMEs en México. Precio de lanzamiento $500 MXN.">
+<meta name="description" content="Diagnóstico financiero estratégico para PyMEs en México. Identificamos fugas de capital, evaluamos márgenes reales y priorizamos acciones concretas. Resultados en 72 horas.">
 <link rel="canonical" href="https://wollvenfinance.com">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wollvenfinance.com">
-<meta property="og:title" content="Wollven Finance — Diagnóstico Financiero para PyMEs">
-<meta property="og:description" content="En 72 horas sabes dónde pierde dinero tu negocio. IA + criterio humano. Precio de lanzamiento $500 MXN.">
+<meta property="og:title" content="Wollven Finance — Análisis Financiero Estratégico para PyMEs">
+<meta property="og:description" content="Diagnóstico financiero estratégico para PyMEs. Identificamos márgenes reales, fugas de capital y proyecciones a 90 días. Resultados en 72 horas.">
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="Wollven Finance">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Wollven Finance — Diagnóstico Financiero para PyMEs">
-<meta name="twitter:description" content="En 72 horas sabes dónde pierde dinero tu negocio. Desde $500 MXN precio de lanzamiento.">
+<meta name="twitter:title" content="Wollven Finance — Análisis Financiero Estratégico para PyMEs">
+<meta name="twitter:description" content="Análisis financiero estratégico para empresas mexicanas. Visibilidad real sobre rentabilidad, flujo y riesgo operativo. Entrega en 72 horas.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230F1117'/%3E%3Ctext x='50%25' y='57%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='22' font-weight='700' fill='%23E8E6E0'%3EW%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Wollven Finance","description":"Diagnóstico financiero estratégico para PyMEs en México. Análisis en 72 horas con IA + criterio humano.","url":"https://wollvenfinance.com","telephone":"+524871023709","email":"contacto@wollvenfinance.com","address":{"@type":"PostalAddress","addressLocality":"San Luis Potosí","addressRegion":"SLP","addressCountry":"MX"},"priceRange":"$500–$3,499 MXN"}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Wollven Finance","description":"Análisis financiero estratégico para PyMEs en México. Identificación de márgenes reales, fugas de capital y proyecciones de flujo en 72 horas.","url":"https://wollvenfinance.com","telephone":"+524871023709","email":"contacto@wollvenfinance.com","address":{"@type":"PostalAddress","addressLocality":"San Luis Potosí","addressRegion":"SLP","addressCountry":"MX"},"priceRange":"$500–$3,499 MXN"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
@@ -301,6 +301,28 @@ footer{background:var(--grf);border-top:1px solid var(--b2);padding:3rem 2.5rem}
   0%,100%{opacity:1;transform:scale(1)}
   50%{opacity:.4;transform:scale(1.4)}
 }
+
+/* Plan result box */
+.plan-result{
+  background:rgba(74,127,165,.08);
+  border:1px solid rgba(74,127,165,.2);
+  border-radius:6px;
+  padding:.85rem 1rem;
+  font-size:.76rem;
+  color:rgba(232,230,224,.7);
+  line-height:1.65;
+  margin-bottom:1.25rem;
+  font-style:italic;
+}
+.plan.feat .plan-result{
+  background:rgba(74,127,165,.1);
+  border-color:rgba(74,127,165,.3);
+}
+.plan.monitor .plan-result{
+  background:rgba(45,202,114,.06);
+  border-color:rgba(45,202,114,.2);
+}
+
 /* === VISUAL ENHANCEMENTS === */
 
 /* Animated background orbs */
@@ -580,7 +602,7 @@ footer::before{
     <a href="#que-obtienes">Qué obtienes</a>
     <a href="#precios">Precios</a>
     <a href="#faq">FAQ</a>
-    <a href="#contacto" class="nav-cta">Solicitar diagnóstico</a>
+    <a href="#contacto" class="nav-cta">Solicitar evaluación</a>
   </div>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -605,15 +627,15 @@ footer::before{
   <div class="hero-inner">
     <div class="hero-eyebrow">San Luis Potosí · México</div>
     <h1 class="hero-h1">
-      <span class="l1">Todo negocio pierde dinero.</span>
-      <span class="l2">Pocos descubren dónde.</span>
+      <span class="l1">Antes de la próxima decisión,</span>
+      <span class="l2">entiende qué dicen tus números.</span>
     </h1>
-    <p class="hero-sub">¿Cuánto ganas realmente? ¿Dónde se va el dinero? ¿Qué pasa si no cambias nada en los próximos meses? En 72 horas tienes respuestas claras, con tus propios números, sin necesidad de entender de finanzas.</p>
+    <p class="hero-sub">Analizamos la información financiera de tu empresa y entregamos una evaluación estructurada orientada a la toma de decisiones. Identificamos oportunidades de mejora, riesgos operativos y prioridades con impacto económico potencial. En 72 horas, con tus propios documentos.</p>
     <div class="beta-badge">
       Precio de lanzamiento <strong>$500 MXN</strong> &nbsp;·&nbsp; Primeros 10 clientes
     </div>
     <div class="hero-actions">
-      <a href="#contacto" class="btn-p">Solicitar diagnóstico →</a>
+      <a href="#contacto" class="btn-p">Solicitar evaluación →</a>
       <a href="#como" class="btn-g">Ver cómo funciona</a>
     </div>
     <div class="hero-stats">
@@ -641,32 +663,32 @@ footer::before{
 <section id="problema">
   <div class="container">
     <div class="reveal">
-      <div class="stag">El problema real</div>
-      <h2 class="stitle">Dirigir un negocio sin claridad financiera<br>es tomar decisiones importantes a ciegas.</h2>
+      <div class="stag">La realidad</div>
+      <h2 class="stitle">La mayoría de las empresas conoce sus ventas,<br>pero no siempre entiende su rentabilidad.</h2>
       <div class="gline"></div>
-      <p class="ssub">La mayoría de los negocios no fracasan por falta de ventas. Fracasan porque nadie les dice qué está pasando con su dinero hoy.</p>
+      <p class="ssub">Facturar más no garantiza generar más utilidad. Sin información financiera estructurada, es difícil identificar qué actividades crean valor, cuáles consumen recursos y dónde enfocar las siguientes decisiones.</p>
     </div>
     <div class="prob-grid">
       <div class="pc reveal r1">
         <div class="pc-icon">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
         </div>
-        <h3>El mes termina bien en ventas pero el dinero no alcanza</h3>
-        <p>Facturación alta, cuenta apretada. No saben su margen neto real — solo el percibido. La diferencia entre uno y otro puede ser la diferencia entre crecer o comprometer la operación.</p>
+        <h3>Qué líneas de negocio generan valor y cuáles reducen la rentabilidad</h3>
+        <p>Alta facturación con liquidez limitada es una señal de desalineación entre ingresos y costos reales. Sin un análisis de margen neto por área o producto, la diferencia permanece invisible y compromete la operación.</p>
       </div>
       <div class="pc reveal r2">
         <div class="pc-icon">
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
         </div>
-        <h3>Trabajan más que antes y ganan igual o menos</h3>
-        <p>El negocio crece en movimiento pero no en utilidad. $5,000–$50,000 MXN al mes en fugas identificables permanecen invisibles sin el análisis correcto.</p>
+        <h3>Más ventas no siempre significan una empresa más rentable</h3>
+        <p>El crecimiento operativo puede ocultar costos, ineficiencias y dependencias que reducen la rentabilidad sin ser evidentes en la operación diaria.</p>
       </div>
       <div class="pc reveal r3">
         <div class="pc-icon">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3>Cada decisión importante se toma por intuición</h3>
-        <p>Contratar, invertir, cambiar precios, cancelar un proveedor. Sin información real, cada decisión es una apuesta. Más del 80% de las PyMEs en México opera así (INADEM).</p>
+        <h3>Decisiones relevantes tomadas sin evidencia financiera suficiente</h3>
+        <p>Contratación, inversión, ajuste de precios, gestión de proveedores: decisiones que requieren datos confiables. Más del 80% de las PyMEs en México las toma sin información financiera de soporte (INADEM).</p>
       </div>
     </div>
     <div class="prob-data reveal">
@@ -683,29 +705,29 @@ footer::before{
   <div class="container">
     <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
       <div class="stag">El proceso</div>
-      <h2 class="stitle">Tres pasos. 72 horas. Claridad total.</h2>
+      <h2 class="stitle">Un proceso estructurado<br>en tres etapas y 72 horas.</h2>
       <div class="gline" style="margin:1.5rem auto"></div>
-      <p class="ssub" style="margin:0 auto">Menos de 30 minutos de tu tiempo. El resto lo hacemos nosotros.</p>
+      <p class="ssub" style="margin:0 auto">Requiere menos de 30 minutos de gestión por parte del cliente. El análisis y la elaboración del informe corren por nuestra cuenta.</p>
     </div>
     <div class="steps">
       <div class="step reveal r1">
         <div class="step-num" aria-hidden="true">01</div>
-        <h3>Cuéntanos tu situación</h3>
-        <p>Antes de cualquier documento, respondes cinco preguntas breves sobre tu negocio — por WhatsApp o por el formulario. Eso nos da el contexto que los números solos no muestran.</p>
+        <h3>Contexto inicial del negocio</h3>
+        <p>Antes de procesar documentos, realizamos un levantamiento de contexto mediante cinco preguntas estructuradas — vía WhatsApp o formulario. Esta información complementa el análisis cuantitativo con variables que los números por sí solos no capturan.</p>
         <div class="sec-note">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <p>Documentos cifrados con TLS. Acceso restringido al analista asignado. Archivos eliminados a 30 días de entregado el diagnóstico. NDA disponible desde el primer contacto bajo petición.</p>
+          <p>Documentos cifrados con TLS. Acceso restringido al analista asignado. Archivos eliminados a 30 días de entregada la evaluación. NDA disponible desde el primer contacto bajo petición.</p>
         </div>
       </div>
       <div class="step reveal r2">
         <div class="step-num" aria-hidden="true">02</div>
-        <h3>Envías tus documentos</h3>
-        <p>Facturas PDF o XML del SAT, estados de cuenta de los últimos 3 meses, comprobantes de venta si los tienes. Los subes directamente a tu plataforma Wollven — sin software adicional.</p>
+        <h3>Carga documental</h3>
+        <p>Facturas PDF o XML del SAT, estados de cuenta de los últimos tres meses y comprobantes de venta disponibles. La carga se realiza directamente en la plataforma Wollven Finance, sin requerir software adicional ni configuración previa.</p>
       </div>
       <div class="step reveal r3">
         <div class="step-num" aria-hidden="true">03</div>
-        <h3>Recibes tu diagnóstico</h3>
-        <p>En 72 horas tienes acceso a tu análisis completo en la plataforma Wollven Finance — disponible desde cualquier dispositivo. Resultados, análisis y recomendaciones organizados y listos para actuar.</p>
+        <h3>Presentación de hallazgos</h3>
+        <p>En un plazo de 72 horas, el cliente recibe acceso a su análisis completo a través de la plataforma Wollven Finance, disponible desde cualquier dispositivo. El informe incluye hallazgos, métricas y recomendaciones priorizadas, listos para revisión y ejecución.</p>
       </div>
     </div>
   </div>
@@ -716,45 +738,45 @@ footer::before{
   <div class="container">
     <div class="reveal">
       <div class="stag">Qué obtienes</div>
-      <h2 class="stitle">Las respuestas que tu negocio<br>lleva meses esperando.</h2>
+      <h2 class="stitle">Información diseñada para<br>respaldar decisiones de negocio.</h2>
       <div class="gline"></div>
-      <p class="ssub">No un reporte de páginas que nadie lee. Respuestas claras y específicas, con acciones listas para ejecutar.</p>
+      <p class="ssub">No es un reporte genérico. Es una evaluación financiera estructurada, específica para la situación de cada empresa, con hallazgos accionables ordenados por impacto.</p>
     </div>
     <div class="entregables-grid">
       <div class="ei reveal r1">
         <div class="ei-num">01 ——</div>
-        <h3>Margen neto real por producto o área</h3>
-        <p>No el margen percibido — el neto real después de costos directos, indirectos y proporcionales. Identifica qué genera valor y qué subsidia pérdidas invisibles.</p>
+        <h3>Entender qué genera realmente rentabilidad</h3>
+        <p>Margen neto real por producto, servicio o unidad de negocio. Identificamos qué actividades contribuyen al resultado financiero y cuáles consumen recursos sin generar retorno proporcional.</p>
         <span class="ei-tag">Ambos planes</span>
       </div>
       <div class="ei reveal r2">
         <div class="ei-num">02 ——</div>
-        <h3>Mapa de fugas de dinero activas</h3>
-        <p>Gastos sin retorno, costos mal asignados, servicios no utilizados, descuentos no cobrados. Cada fuga con monto estimado mensual y nivel de urgencia para actuar.</p>
+        <h3>Detectar costos que reducen el margen</h3>
+        <p>Identificación de gastos recurrentes, costos mal asignados e ineficiencias operativas. Cada hallazgo incluye una estimación de impacto económico y nivel de prioridad.</p>
         <span class="ei-tag">Ambos planes</span>
       </div>
       <div class="ei reveal r3">
         <div class="ei-num">03 ——</div>
-        <h3>Análisis de concentración de riesgo</h3>
-        <p>Dependencia de clientes, proveedores o productos. Si tu cliente principal cancela, el negocio pierde X% de flujo en Y días — cuantificado y con acciones preventivas.</p>
+        <h3>Reducir dependencias críticas</h3>
+        <p>Análisis de concentración en clientes, proveedores y fuentes de ingreso. Evaluamos la exposición operativa y financiera ante la pérdida de actores clave.</p>
         <span class="ei-tag">Ambos planes</span>
       </div>
       <div class="ei reveal r1">
         <div class="ei-num">04 ——</div>
-        <h3>Proyección a 90 días — 2 trayectorias</h3>
-        <p>Trayectoria A: si el negocio sigue igual. Trayectoria B: si aplica las recomendaciones. Flujo, margen y punto de equilibrio con fecha. Con números reales, no suposiciones.</p>
+        <h3>Evaluar escenarios futuros</h3>
+        <p>Proyección financiera a 90 días con escenario actual y escenario optimizado. Permite visualizar el posible impacto de las acciones recomendadas sobre flujo de efectivo, margen y punto de equilibrio.</p>
         <span class="ei-tag">Ambos planes</span>
       </div>
       <div class="ei reveal r2">
         <div class="ei-num">05 ——</div>
-        <h3>Recomendaciones ordenadas por impacto</h3>
-        <p>3 a 5 acciones concretas, de mayor a menor impacto financiero estimado, con criterio de priorización explícito y plazo sugerido. Pensadas para tu situación específica.</p>
+        <h3>Priorizar decisiones</h3>
+        <p>Plan de acción ordenado por impacto financiero estimado. Recomendaciones concretas con horizonte inmediato, 30 días y 90 días.</p>
         <span class="ei-tag">Ambos planes</span>
       </div>
       <div class="ei reveal r3">
         <div class="ei-num">06 ——</div>
-        <h3>Vulnerabilidad ante automatización e IA</h3>
-        <p>Qué procesos de tu negocio están en riesgo de ser automatizados en los próximos 12–24 meses, el impacto potencial en tu operación y acciones concretas para anticiparte.</p>
+        <h3>Prepararse para la automatización</h3>
+        <p>Evaluación de vulnerabilidad operativa ante automatización e IA. Identificamos procesos con mayor riesgo de sustitución tecnológica y posibles acciones de adaptación.</p>
         <span class="ei-tag excl">Solo Plan Estratégico</span>
       </div>
     </div>
@@ -766,9 +788,9 @@ footer::before{
   <div class="container">
     <div class="reveal">
       <div class="stag">Por qué Wollven</div>
-      <h2 class="stitle">¿Para qué pago esto si ya tengo contador?</h2>
+      <h2 class="stitle">Wollven Finance y el contador<br>son servicios complementarios, no equivalentes.</h2>
       <div class="gline"></div>
-      <p class="ssub">Son servicios distintos. Tu contador cumple con el SAT. Wollven te dice qué hacer para ganar más — hoy, con tus números.</p>
+      <p class="ssub">El contador gestiona el cumplimiento fiscal. Wollven Finance analiza la rentabilidad, identifica ineficiencias y orienta la toma de decisiones estratégicas con base en información financiera real.</p>
     </div>
     <div class="reveal" style="overflow-x:auto;margin-top:3rem">
       <table class="ctable">
@@ -813,7 +835,7 @@ footer::before{
           </tr>
           <tr>
             <td>Inversión</td>
-            <td class="wc" style="color:var(--hie)">$500 MXN (lanzamiento) · $1,999–$3,499 después</td>
+            <td class="wc" style="color:var(--hie)">$500 MXN precio de lanzamiento · $1,999–$3,499 MXN precio regular</td>
             <td>$1,500–$4,000/mes</td>
             <td>$15,000–$40,000/mes</td>
           </tr>
@@ -828,9 +850,9 @@ footer::before{
   <div class="container">
     <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
       <div class="stag">Inversión</div>
-      <h2 class="stitle">Precio de lanzamiento<br>para los primeros 10 clientes.</h2>
+      <h2 class="stitle">10 empresas. Precio de lanzamiento.<br>Resultados reales en 72 horas.</h2>
       <div class="gline" style="margin:1.5rem auto"></div>
-      <p class="ssub" style="margin:0 auto">Si el análisis identifica $10,000 MXN al mes en dinero que se pierde, el retorno sobre tu inversión es positivo desde el primer mes.</p>
+      <p class="ssub" style="margin:0 auto">Estamos en etapa de lanzamiento. Los primeros 10 clientes acceden al precio fundador a cambio de retroalimentación real. El costo se recupera si los hallazgos identifican ineficiencias superiores a la inversión — algo que ocurre en la mayoría de los casos desde el primer mes.</p>
     </div>
     <div class="price-grid">
 
@@ -840,16 +862,17 @@ footer::before{
         <div class="price-regular">Precio regular: $1,999 MXN</div>
         <div class="price-now">$500 <span>MXN</span></div>
         <div class="beta-dot">Precio de lanzamiento · Primeros 10 clientes</div>
-        <div class="plan-target">Para negocios hasta $5M de facturación anual</div>
+        <div class="plan-target">Para empresas que necesitan saber exactamente qué está limitando su rentabilidad — y qué corregir primero.</div>
         <ul class="plan-features">
-          <li>Margen neto real por producto o área</li>
-          <li>Mapa de fugas de dinero con monto estimado</li>
-          <li>Análisis de concentración de riesgo</li>
-          <li>Proyección a 90 días — 2 trayectorias</li>
-          <li>3 acciones ordenadas por impacto</li>
-          <li>Acceso al diagnóstico en la plataforma Wollven</li>
+          <li><strong style="color:var(--mar)">¿Dónde se va el dinero?</strong> Identificamos qué productos, servicios o áreas generan valor real y cuáles consumen recursos sin retorno proporcional.</li>
+          <li><strong style="color:var(--mar)">¿Cuánto estoy perdiendo sin saberlo?</strong> Cuantificamos costos, gastos e ineficiencias con impacto económico estimado y nivel de prioridad de intervención.</li>
+          <li><strong style="color:var(--mar)">¿Qué tan expuesta está mi operación?</strong> Analizamos dependencia en clientes, proveedores e ingresos — con cifras concretas: si pierdes a tu cliente principal, impacta X% de tu flujo.</li>
+          <li><strong style="color:var(--mar)">¿Qué pasa si no cambio nada?</strong> Proyección a 90 días: escenario actual vs. escenario con mejoras implementadas. Flujo, margen y punto de equilibrio con fecha.</li>
+          <li><strong style="color:var(--mar)">¿Qué hago primero?</strong> Las 3 decisiones con mayor impacto financiero esperado para tu empresa, ordenadas por resultado potencial — no por complejidad.</li>
+          <li>Acceso completo al análisis en la plataforma Wollven Finance, disponible desde cualquier dispositivo.</li>
         </ul>
-        <a href="https://wa.me/524871023709?text=Hola,%20me%20interesa%20el%20Plan%20Esencial%20de%20Wollven%20Finance" class="plan-btn sec" target="_blank" rel="noopener">Solicitar Plan Esencial</a>
+        <div class="plan-result">Resultado esperado: Una visión clara de la situación financiera real de tu empresa y un conjunto definido de prioridades para actuar esta semana.</div>
+        <a href="https://wa.me/524871023709?text=Hola,%20me%20interesa%20el%20Plan%20Esencial%20de%20Wollven%20Finance" class="plan-btn sec" target="_blank" rel="noopener">Quiero esta evaluación</a>
         <div class="plan-delivery">⟳ Entrega garantizada en 72 horas</div>
       </div>
 
@@ -859,14 +882,16 @@ footer::before{
         <div class="price-regular">Precio regular: $3,499 MXN</div>
         <div class="price-now">$500 <span>MXN</span></div>
         <div class="beta-dot">Precio de lanzamiento · Primeros 10 clientes</div>
-        <div class="plan-target">Para empresas con +$5M de facturación anual</div>
+        <div class="plan-target">Para empresas en crecimiento que necesitan mayor profundidad de análisis y acompañamiento en la interpretación de resultados.</div>
         <ul class="plan-features">
-          <li>Todo lo del Plan Esencial</li>
-          <li>5 acciones con priorización estratégica</li>
-          <li>Dashboard interactivo en la plataforma</li>
-          <li class="gd">Análisis de vulnerabilidad ante automatización e IA — qué áreas están en riesgo y qué hacer antes de que impacten el negocio</li>
+          <li>Todo lo del Plan Esencial, con mayor profundidad analítica.</li>
+          <li class="gd"><strong style="color:var(--grn)">5 decisiones priorizadas</strong> con horizonte de implementación inmediato, 30 días y 90 días. No una lista de recomendaciones — una agenda de acción financiera.</li>
+          <li class="gd"><strong style="color:var(--grn)">Sesión ejecutiva de 30 minutos</strong> para revisar hallazgos, discutir riesgos y resolver dudas sobre prioridades directamente con el analista.</li>
+          <li class="gd"><strong style="color:var(--grn)">Dashboard interactivo</strong> con indicadores clave, visualización de flujo y comparación por periodo — accesible desde la plataforma en cualquier momento.</li>
+          <li class="gd"><strong style="color:var(--grn)">Evaluación de exposición operativa</strong> ante cambios tecnológicos y automatización: qué procesos tienen mayor riesgo de impacto en los próximos 12 a 24 meses y qué hacer antes de que ocurra.</li>
         </ul>
-        <a href="https://wa.me/524871023709?text=Hola,%20me%20interesa%20el%20Plan%20Estratégico%20de%20Wollven%20Finance" class="plan-btn pri" target="_blank" rel="noopener">Solicitar Plan Estratégico</a>
+        <div class="plan-result">Resultado esperado: Mayor claridad sobre las decisiones con mayor potencial de impacto en rentabilidad, crecimiento y sostenibilidad operativa — con un analista que te explica cada hallazgo.</div>
+        <a href="https://wa.me/524871023709?text=Hola,%20me%20interesa%20el%20Plan%20Estratégico%20de%20Wollven%20Finance" class="plan-btn pri" target="_blank" rel="noopener">Quiero esta evaluación</a>
         <div class="plan-delivery">⟳ Entrega garantizada en 72 horas</div>
       </div>
 
@@ -874,15 +899,17 @@ footer::before{
       <div class="plan monitor reveal r3">
         <div class="plan-name">Wollven Monitor</div>
         <div class="price-now">$1,500 <span>MXN/mes</span></div>
-        <div class="beta-dot" style="color:var(--grn)">Disponible para clientes con diagnóstico activo</div>
-        <div class="plan-target">Seguimiento continuo — tu negocio cambia cada mes</div>
+        <div class="beta-dot" style="color:var(--grn)">Disponible para clientes con evaluación inicial completada</div>
+        <div class="plan-target">No te avisamos qué pasó. Te avisamos cuando algo importante está cambiando.</div>
         <ul class="plan-features">
-          <li class="gd">Diagnóstico actualizado cada mes con tus nuevos documentos, comparado contra el análisis inicial</li>
-          <li class="gd">Alerta inmediata por WhatsApp o correo cuando un indicador clave empeora</li>
-          <li class="gd">Revisión estratégica trimestral de 30 minutos incluida</li>
+          <li class="gd"><strong style="color:var(--grn)">Evaluación financiera mensual</strong> con los documentos más recientes de tu empresa, comparada contra resultados históricos para identificar tendencias y desviaciones relevantes.</li>
+          <li class="gd"><strong style="color:var(--grn)">Alertas inteligentes</strong> por WhatsApp o correo cuando ocurre algo que merece atención: el margen cayó, un cliente concentra más del 40% del flujo, los gastos crecen más rápido que las ventas.</li>
+          <li class="gd"><strong style="color:var(--grn)">Revisión estratégica trimestral</strong> de 30 minutos incluida para ajustar prioridades según cómo evoluciona el negocio.</li>
+          <li class="gd"><strong style="color:var(--grn)">Historial financiero acumulado</strong> en la plataforma: evolución de indicadores, comparación por periodo y registro de decisiones implementadas.</li>
         </ul>
-        <a href="https://wa.me/524871023709?text=Hola,%20me%20interesa%20Wollven%20Monitor%20para%20seguimiento%20mensual" class="plan-btn grn" target="_blank" rel="noopener">Solicitar Monitor</a>
-        <div class="monitor-note">20% de descuento para clientes existentes.<br>Condiciones aplicables según términos vigentes.</div>
+        <div class="plan-result">Resultado esperado: Visibilidad financiera continua para reaccionar antes de que un problema se convierta en una decisión costosa.</div>
+        <a href="https://wa.me/524871023709?text=Hola,%20me%20interesa%20Wollven%20Monitor%20para%20seguimiento%20mensual" class="plan-btn grn" target="_blank" rel="noopener">Quiero seguimiento continuo</a>
+        <div class="monitor-note">20% de descuento para clientes del Programa Fundador.<br>Sin contratos. Cancelable con 30 días de aviso.</div>
       </div>
 
     </div>
@@ -899,36 +926,23 @@ footer::before{
   <div class="container">
     <div class="reveal">
       <div class="stag">Quiénes somos</div>
-      <h2 class="stitle">Wollven nació de una pregunta<br>que nadie respondía bien.</h2>
+      <h2 class="stitle">Wollven Finance es una firma mexicana<br>especializada en análisis financiero para empresas.</h2>
       <div class="gline"></div>
-      <p class="ssub">¿Por qué los dueños de negocio en México tienen que adivinar si están ganando dinero? Después de analizar decenas de casos, la respuesta siempre era la misma: nadie les había interpretado sus números. Solo los había registrado.</p>
+      <p class="ssub">Wollven Finance ayuda a transformar información financiera en criterios de decisión para crecimiento, rentabilidad y gestión del riesgo. Nuestro trabajo consiste en identificar qué está funcionando, qué está limitando los resultados y qué acciones pueden generar mayor impacto económico para la empresa.</p>
     </div>
     <div class="about-grid">
       <div class="ab reveal r1">
-        <div class="ab-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-        </div>
-        <h3>El criterio humano no es opcional</h3>
-        <p>Cada diagnóstico es revisado y validado por un analista antes de entregarse. La tecnología procesa — la persona interpreta. Sin ese paso, un análisis es solo texto generado. Con él, es una herramienta para tomar decisiones.</p>
+        <h3>Qué creemos</h3>
+        <p>Las decisiones importantes no deberían depender de intuición cuando existe información capaz de respaldarlas. Por eso cada evaluación busca responder una pregunta concreta: ¿Qué debería hacer la empresa a continuación?</p>
       </div>
       <div class="ab reveal r2">
-        <div class="ab-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3>Construido para la realidad de las PyMEs</h3>
-        <p>No para grandes corporativos con departamentos de finanzas. Para negocios reales, con documentación real — a veces incompleta, a veces informal — que necesitan claridad, no perfección.</p>
-      </div>
-      <div class="ab reveal r3">
-        <div class="ab-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-        </div>
-        <h3>El diagnóstico es el inicio, no el producto</h3>
-        <p>Un reporte que nadie lee no sirve de nada. Por eso cada entregable termina con acciones concretas, ordenadas por impacto y listas para ejecutarse. El objetivo no es informar — es que algo cambie.</p>
+        <h3>Nuestro enfoque</h3>
+        <p>La contabilidad registra lo que ocurrió.<br>La gestión financiera ayuda a decidir qué hacer después.</p>
       </div>
     </div>
     <div class="mision-box reveal">
       <div class="lbl">Por qué existe Wollven</div>
-      <p>"Que ningún dueño de negocio en México tome una decisión financiera importante sin entender primero qué dicen realmente sus números."</p>
+      <p>"Que ningún dueño de empresa tome una decisión financiera importante sin entender primero qué dicen realmente sus números."</p>
     </div>
     <a href="https://wollven-finance-core.base44.app" target="_blank" rel="noopener" class="platform-link reveal">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
@@ -948,7 +962,7 @@ footer::before{
     <div class="faq-list reveal">
 
       <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">¿Qué documentos necesito para el diagnóstico?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <button class="faq-q" aria-expanded="false">¿Qué documentos necesito para la evaluación?<span class="faq-icon" aria-hidden="true">+</span></button>
         <div class="faq-a"><p>Facturas PDF o XML del SAT, estados de cuenta bancarios de los últimos 3 meses, y comprobantes de venta si los tienes. No necesitas contabilidad perfectamente formalizada — trabajamos con lo que tienes. Entre más documentos, más preciso el análisis. Si tienes dudas sobre qué compartir, te orientamos antes de que pagues cualquier cosa.</p></div>
       </div>
 
@@ -964,17 +978,17 @@ footer::before{
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">¿Qué pasa si no encuentran oportunidades en mi negocio?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-a"><p>En la práctica, todo negocio activo con documentación disponible tiene áreas de mejora identificables — el problema no es que no existan, sino que sin el análisis correcto permanecen invisibles. Si tienes dudas sobre si el diagnóstico aplica para tu situación, escríbenos antes de contratar. Te orientamos sin compromiso y sin costo.</p></div>
+        <div class="faq-a"><p>En la práctica, todo negocio activo con documentación disponible tiene áreas de mejora identificables — el problema no es que no existan, sino que sin el análisis correcto permanecen invisibles. Si tienes dudas sobre si la evaluación aplica para tu situación, escríbenos antes de contratar. Te orientamos sin compromiso y sin costo.</p></div>
       </div>
 
       <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">¿Cómo recibo el diagnóstico?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-a"><p>Accedes a tu diagnóstico completo en la plataforma Wollven Finance — disponible desde cualquier dispositivo, sin instalaciones. Ahí están todas las secciones del análisis: situación actual, fugas de dinero, nivel de riesgo, proyección y acciones concretas. La plataforma es tuya y puedes consultarla cuando quieras.</p></div>
+        <button class="faq-q" aria-expanded="false">¿Cómo recibo mi evaluación?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a"><p>Accedes a tu evaluación completa en la plataforma Wollven Finance — disponible desde cualquier dispositivo, sin instalaciones. Ahí están todas las secciones del análisis: situación actual, costos con mayor impacto, nivel de riesgo, proyección y acciones concretas. La plataforma es tuya y puedes consultarla cuando quieras.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">¿Mis datos financieros están seguros?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-a"><p>Sí. Los documentos se transmiten con cifrado TLS. Solo el analista asignado a tu caso tiene acceso. Eliminamos todos los archivos a los 30 días de entregado el diagnóstico. Si lo prefieres, firmamos un NDA antes de que compartas cualquier información — escríbenos y te lo enviamos en menos de 24 horas.</p></div>
+        <div class="faq-a"><p>Sí. Los documentos se transmiten con cifrado TLS. Solo el analista asignado a tu caso tiene acceso. Eliminamos todos los archivos a los 30 días de entregada la evaluación. Si lo prefieres, firmamos un NDA antes de que compartas cualquier información — escríbenos y te lo enviamos en menos de 24 horas.</p></div>
       </div>
 
       <div class="faq-item">
@@ -983,8 +997,13 @@ footer::before{
       </div>
 
       <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">¿Cada cuánto debería hacer un diagnóstico?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-a"><p>Depende del ritmo de tu negocio. Para negocios en crecimiento activo, un diagnóstico trimestral tiene sentido — la situación cambia y las decisiones de hace tres meses pueden no ser las correctas hoy. Wollven Monitor fue diseñado exactamente para eso: seguimiento mensual para quienes quieren visibilidad continua.</p></div>
+        <button class="faq-q" aria-expanded="false">¿Cada cuánto debería actualizar la evaluación financiera?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a"><p>Depende del ritmo del negocio. Para empresas en crecimiento activo, una evaluación trimestral tiene sentido — la situación cambia y las decisiones de hace tres meses pueden no ser las correctas hoy. Wollven Monitor fue diseñado exactamente para eso: seguimiento mensual para quienes quieren visibilidad continua.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">¿Qué diferencia a Wollven de una herramienta de IA generativa?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-a"><p>La tecnología ayuda a organizar y analizar información. Las conclusiones y prioridades se revisan antes de ser entregadas. La tecnología procesa — la persona interpreta.</p></div>
       </div>
 
     </div>
@@ -998,8 +1017,8 @@ footer::before{
     <div class="reveal">
       <div class="urgency">Programa Fundador · 10 cupos de lanzamiento disponibles</div>
       <div class="stag">Primer paso</div>
-      <h2 class="stitle" style="max-width:680px;margin:0 auto 1rem">¿Tu negocio está perdiendo<br>dinero sin saberlo?</h2>
-      <p class="ssub" style="margin:0 auto 2rem">Cuéntanos brevemente tu situación y te decimos cómo podemos ayudarte. Sin compromiso.</p>
+      <h2 class="stitle" style="max-width:680px;margin:0 auto 1rem">¿Qué decisiones estás tomando<br>sin información financiera suficiente?</h2>
+      <p class="ssub" style="margin:0 auto 2rem">Obtén una evaluación financiera estructurada en 72 horas y conoce qué factores están afectando la rentabilidad, el flujo de efectivo y las prioridades de tu negocio.</p>
     </div>
 
     <!-- Formspree configurado -->
@@ -1045,7 +1064,7 @@ footer::before{
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         WhatsApp directo
       </a>
-      <a href="https://mail.google.com/mail/?view=cm&to=contacto@wollvenfinance.com&su=Diagnóstico%20Wollven%20Finance" target="_blank" rel="noopener" class="btn-g">Enviar correo</a>
+      <a href="https://mail.google.com/mail/?view=cm&to=contacto@wollvenfinance.com&su=Evaluación%20Wollven%20Finance" target="_blank" rel="noopener" class="btn-g">Enviar correo</a>
     </div>
   </div>
 </section>
